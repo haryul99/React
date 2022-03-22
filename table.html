@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 연습</title>
+</head>
+<body>
+    <table border="1">
+        <caption>성적표</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>철수</td>
+                <td>23</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>영희</td>
+                <td>24</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>평균</td>
+                <td></td>
+                <td>90</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>확장 테이블</h1>
+    <table border="1">
+        <tr>
+            <td colspan="2">첫</td>
+            <!-- <td>두</td> -->
+            <td>셋</td>
+        </tr>
+        <tr>
+            <td>2 첫</td>
+            <td>2 둘</td>
+            <td rowspan="2">3 셋</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,2</td>
+            <!-- <td>3,3</td> -->
+        </tr>
+    </table>
+</body>
+</html>

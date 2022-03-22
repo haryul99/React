@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멤버십 가입</title>
+</head>
+
+<body>
+    <form action="form.html" name="registerForm" >
+        <!-- method : Get(default), Post -->
+        <!-- action: 데이터를 처리할 서버의 페이지 -->
+        <fieldset>
+            <!-- 입력양식의 그룹 -->
+            <legend>멤버십 가입</legend>
+            <label for="userid">아이디</label>
+            <!-- for은 그 아이디를 따라가 활성화시킴 -->
+            <input type="text" name="userid" id="userid"><br>
+            <label for="passwd">비밀번호</label>
+            <input type="password" name="passwd" id="passwd"><br>
+            <input type="hidden" name="secret" value="not-shown">
+            <!-- hidden은 사용자로부터 입력받은 데이터는 아니지만
+                서버에서 반드시 처리할 데이터를 전송하고자 할 때 사용 -->
+            <label for="gender">성별</label>
+            <!-- radio: 한 개만 선택할 경우 -->
+            <input type="radio" name="gender" value="male" checked>남성
+            <input type="radio" name="gender" value="female">여성<br>
+            <label for="">선호음료</label>
+            <input type="checkbox" name="favorite" id="delmont">델몬트
+            <input type="checkbox" name="favorite" id="power">파워에이드
+            <input type="checkbox" name="favorite" id="americano">아메리카노
+            <input type="checkbox" name="favorite" id="latte">라떼 <br>
+            <!-- 서버로 전송 시에는 문자열의 배열로 전송됨 -->
+            <label for="">통신사</label>
+            <select name="telecom" id="">
+                <option value="S">SKT</option>
+                <option value="k">KT</option>
+                <option value="L">LG</option>
+                <option value="A">알뜰폰</option>
+            </select><br>
+            <input type="reset" value="정정">
+            <input type="submit" value="멤버십가입">
+        </fieldset>
+    </form>
+</body>
+
+</html>
